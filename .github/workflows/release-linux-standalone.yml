@@ -33,17 +33,17 @@ jobs:
           cd extras/packaging/linux
           ./get_release_artifacts.sh
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: http
           path: extras/packaging/linux/artifacts/dist/http
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: httpie.deb
           path: extras/packaging/linux/artifacts/dist/*.deb
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: httpie.rpm
           path: extras/packaging/linux/artifacts/dist/*.rpm
